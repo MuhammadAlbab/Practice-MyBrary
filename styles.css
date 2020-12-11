@@ -1,0 +1,367 @@
+* {
+    box-sizing: border-box;
+    color: rgb(87, 82, 82);
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #e7e7e7;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.container-section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav{
+    background-color: #e7e7e7;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    padding: .25em;
+    text-decoration: none;
+}
+
+.main-nav-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-nav-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.nav-item{
+    font-family: 'Nerko One', cursive;
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+.nav-header{
+    font-size: 3em;
+}
+  
+.nav a:hover{
+    color:black; 
+}
+
+.section-header{
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 5px 5px 5px rgba(158, 156, 156, 0.5);
+}
+
+.section-flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-items{
+    position: relative;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.item-book{
+    width: 250px;
+    height: 300px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    display: block;
+    opacity: 1;
+    margin: 20px;
+    transition: 1s ease;
+    backface-visibility: hidden;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 210px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.item-details .click-item-details{
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* 
+glowing
+*/
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
+    }
+    to {
+      text-shadow: 0 0 20px #4af174, 0 0 30px #4af174, 0 0 40px #4af174, 0 0 50px #4af174, 0 0 60px #4af174, 0 0 70px #4af174, 0 0 80px #4af174, 0 0 90px #4af174, 0 0 100px #4af174;
+    }
+}
+
+.item-name{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.item-author{
+    font-size: 1.2em;
+}
+
+.item-year{
+    font-size: .9em;
+}
+
+.click-item-details{
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.8em;
+    color: black;
+    text-decoration: none;
+}
+
+.click-item-details:hover{
+    color: darkslategray; 
+}
+
+.section-items:hover .item-book {
+    width: 280px;
+    height: 330px;
+    opacity: .3;
+    box-shadow: none;
+}
+
+.section-items:hover .item-details {
+    opacity: 1;
+}
+
+.main-footer{
+    text-align: center;
+    margin-top: 35px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px -10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main-footer h2{
+    font-family: 'Nerko One', cursive;
+    margin: 0;
+}
+
+/* search form + transition */
+
+.container-search{
+    text-align: center;
+}
+
+.search {
+    width: 300px;
+    background-image: url("/icons/baseline_search_black_18dp.png");
+    background-position: 5px 7px;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 45px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px rgba(158, 156, 156, 0.5);;
+    -webkit-transition: 1s ease;
+    transition: 1s ease ;
+}
+
+.search:focus{
+    width: 100%;
+    background-color: rgba(173, 216, 230, .2);
+    box-shadow: none;
+}
+
+.category{
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
+    margin: 0;
+    text-shadow: 10px 10px 5px rgba(158, 156, 156, 0.5);
+}
+
+.category-1{
+    margin-top: 20px;
+    padding-top: 5px;
+    
+}
+
+.nav-books{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px 10px 0px;
+    box-shadow: none;
+    text-shadow: 5px 5px 5px rgba(158, 156, 156, 0.5);
+}
+
+.nav-books ul{
+    text-align: center;
+    padding: 0;
+}
+
+.nav-books a{
+    padding: 0 .4em;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.nav-item-books{
+    font-family: 'Permanent Marker', cursive; 
+    font-size: 1.5em;
+    transition: .4s ease-in-out ;
+}
+
+.nav-books a:hover{
+    font-size: 1.6em;
+    padding: 0 1em;
+    color: black;
+    border-radius: 20px;
+}
+
+.see-more{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.see-more button{
+    border: 0;
+    background: rgba(0,0,0,0);
+    font-size: 1.4em;
+    text-decoration: none;
+    transition: .4s ease-in-out;
+    text-shadow: 10px 10px 5px rgba(158, 156, 156, 0.5)
+}
+
+.see-more button:hover{
+    font-size: 1.5em;
+    color: black;
+}
+
+.see-more button:focus{
+    border: 0;
+}
+
+
+/* 
+index.html styling
+*/
+
+.index-flex-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section-header-index{
+    margin: 20px;
+    font-size: 2.5em;
+    font-family: 'Nerko One', cursive;
+}
+
+.index-image-container{
+    display: flex;
+    margin: 0 20px;
+    flex-shrink: .4;
+}
+
+.index-image{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.details-index{
+    text-align: justify;
+}
+
+.judul-index{
+    margin-bottom: 10px;
+}
+
+.deskripsi-index{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.pages-index{
+    margin: 0px 20px;
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 601px) {
+    
+    .index-image{
+        width: 350px;
+        height: 350px;
+    }
+    
+    .judul-index{
+      font-size: 30px;
+    }
+
+    .deskripsi-index{
+        font-size: 20px;
+    }
+
+    .pages-index{
+        font-size: 15px;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    
+    .index-image{
+        width: 150px;
+        height: 150px;
+    }
+
+    .judul-index{
+    font-size: 15px;
+    }
+
+    .deskripsi-index{
+        font-size: 10px;
+    }
+
+    .pages-index{
+        font-size: 8px;
+    }
+}

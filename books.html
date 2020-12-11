@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>Mybrary</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="main-nav-container container">
+                <a class="nav-item nav-header" href="index.html">MyBrary</a>
+                <ul>
+                    <li><a class="nav-item" href="books.html">Books</a></li>
+                    <li><a class="nav-item" href="discussion.html">Discussion</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-section">
+        <div class="container">
+            <div class="nav nav-books">
+                <ul>
+                    <li><a class="nav-item nav-item-books" href="">new release</a></li>
+                    <li><a class="nav-item nav-item-books" href="">Trending</a></li>
+                    <li><a class="nav-item nav-item-books" href="">best seller</a></li>
+                    <li><a class="nav-item nav-item-books" href="">recommended</a></li>
+                </ul>
+            </div>
+                <div class="container-search">
+                    <input class="search" type="text" placeholder="search here..." id="searchkey">
+                </div>
+        </div>
+        <!-- <h1 class="section-header category">new release</h1>
+        <div class="section-flex-container">
+            <div class="section-items">
+                <img class="item-book" src="/images/buku1.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">The Republic</h2>
+                    <div class="section-items item-author">Plato</div>
+                    <div class="section-items item-year">1963</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku2.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">soren kierkegaard</h2>
+                    <div class="section-items item-author">joakin garff</div>
+                    <div class="section-items item-year">2001</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>                
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku3.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">the portable</h2>
+                    <div class="section-items item-author">karl marx</div>
+                    <div class="section-items item-year">2009</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku4.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">This Book Loves You</h2>
+                    <div class="section-items item-author">pewdiepie</div>
+                    <div class="section-items item-year">2015</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku5.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">elon musk</h2>
+                    <div class="section-items item-author">ashlee vange</div>
+                    <div class="section-items item-year">2012</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku6.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">The atlantic</h2>
+                    <div class="section-items item-author">tech issue</div>
+                    <div class="section-items item-year">1823</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku7.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">our final invention</h2>
+                    <div class="section-items item-author">james barrat</div>
+                    <div class="section-items item-year">2020</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku8.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">runaway horses</h2>
+                    <div class="section-items item-author">yukio mishima</div>
+                    <div class="section-items item-year">1782</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+        </div>
+        <div class="see-more"><a href="#">see more . . .</a></div>
+
+        <h1 class="section-header category category-1">Trending</h1>
+        <div class="section-flex-container">
+            <div class="section-items">
+                <img class="item-book" src="/images/buku1.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">The Republic</h2>
+                    <div class="section-items item-author">Plato</div>
+                    <div class="section-items item-year">1963</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku2.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">soren kierkegaard</h2>
+                    <div class="section-items item-author">joakin garff</div>
+                    <div class="section-items item-year">2001</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>                
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku3.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">the portable</h2>
+                    <div class="section-items item-author">karl marx</div>
+                    <div class="section-items item-year">2009</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku4.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">This Book Loves You</h2>
+                    <div class="section-items item-author">pewdiepie</div>
+                    <div class="section-items item-year">2015</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku5.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">elon musk</h2>
+                    <div class="section-items item-author">ashlee vange</div>
+                    <div class="section-items item-year">2012</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku6.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">The atlantic</h2>
+                    <div class="section-items item-author">tech issue</div>
+                    <div class="section-items item-year">1823</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku7.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">our final invention</h2>
+                    <div class="section-items item-author">james barrat</div>
+                    <div class="section-items item-year">2020</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku8.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">runaway horses</h2>
+                    <div class="section-items item-author">yukio mishima</div>
+                    <div class="section-items item-year">1782</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+        </div>
+        <div class="see-more"><a href="#">see more . . .</a></div>
+
+        <h1 class="section-header category category-1">best seller</h1>
+        <div class="section-flex-container">
+            <div class="section-items">
+                <img class="item-book" src="/images/buku1.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">The Republic</h2>
+                    <div class="section-items item-author">Plato</div>
+                    <div class="section-items item-year">1963</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku2.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">soren kierkegaard</h2>
+                    <div class="section-items item-author">joakin garff</div>
+                    <div class="section-items item-year">2001</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>                
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku3.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">the portable</h2>
+                    <div class="section-items item-author">karl marx</div>
+                    <div class="section-items item-year">2009</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku4.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">This Book Loves You</h2>
+                    <div class="section-items item-author">pewdiepie</div>
+                    <div class="section-items item-year">2015</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku5.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">elon musk</h2>
+                    <div class="section-items item-author">ashlee vange</div>
+                    <div class="section-items item-year">2012</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku6.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">The atlantic</h2>
+                    <div class="section-items item-author">tech issue</div>
+                    <div class="section-items item-year">1823</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku7.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">our final invention</h2>
+                    <div class="section-items item-author">james barrat</div>
+                    <div class="section-items item-year">2020</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku8.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">runaway horses</h2>
+                    <div class="section-items item-author">yukio mishima</div>
+                    <div class="section-items item-year">1782</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+        </div>
+        <div class="see-more"><a href="#">see more . . .</a></div> -->
+
+        <h1 class="section-header category category-1">recommended</h1>
+        <div class="section-flex-container" id="testAPI">
+            <!-- <div class="section-items">
+                <img class="item-book" src="/images/buku1.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">The Republic</h2>
+                    <div class="section-items item-author">Plato</div>
+                    <div class="section-items item-year">1963</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku2.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">soren kierkegaard</h2>
+                    <div class="section-items item-author">joakin garff</div>
+                    <div class="section-items item-year">2001</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>                
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku3.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">the portable</h2>
+                    <div class="section-items item-author">karl marx</div>
+                    <div class="section-items item-year">2009</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku4.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">This Book Loves You</h2>
+                    <div class="section-items item-author">pewdiepie</div>
+                    <div class="section-items item-year">2015</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku5.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">elon musk</h2>
+                    <div class="section-items item-author">ashlee vange</div>
+                    <div class="section-items item-year">2012</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku6.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">The atlantic</h2>
+                    <div class="section-items item-author">tech issue</div>
+                    <div class="section-items item-year">1823</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku7.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">our final invention</h2>
+                    <div class="section-items item-author">james barrat</div>
+                    <div class="section-items item-year">2020</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div>
+            <div class="section-items">
+                <img class="item-book" src="/images/buku8.jpg">
+                <div class="item-details">
+                    <h2 class="section-items item-name">runaway horses</h2>
+                    <div class="section-items item-author">yukio mishima</div>
+                    <div class="section-items item-year">1782</div>
+                    <a class="click-item-details" href="index.html">Details!</a>
+                </div>
+            </div> -->
+        </div>
+        <div class="see-more"><button href="#" id="see-more">see more . . .</button></div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+        <h2>This app helps you plan your reading and manage your reading materials. Keep reading books kid!</h2>
+        </div>
+    </footer>
+    <script>
+        var testAPI = document.getElementById("testAPI")
+        var maxResult = 12
+        var searchBook = document.getElementById('searchkey')
+        searchBook.addEventListener('keyup', loadDoc)
+        var seemore = document.getElementById('see-more')
+        seemore.addEventListener('click', loadDoc)
+        function loadDoc(event) {
+            if(event.keyCode === 13 || event.button === 0){
+                if(event.button === 0) maxResult = maxResult + 12
+                fetch("https://www.googleapis.com/books/v1/volumes?q=" + searchBook.value + "&maxResults=" + maxResult, {
+                    "method": "GET",
+                })
+                .then(response => response.json())
+                .then(data => {
+                    testAPI.innerHTML = ""
+                    var books = data.items
+                    var pagination = data.totalItems / 12
+                    books.forEach(function(item, index){
+                        var author = (item.volumeInfo.authors != undefined) ? item.volumeInfo.authors.join(', ') : ""
+                        var countCharAuthor = (author.length > 30) ? ' . . .' : ''
+                        var thumbnail = (item.volumeInfo.imageLinks != undefined) ? item.volumeInfo.imageLinks.thumbnail : ""
+                        var bookYear = (item.volumeInfo.publishedDate != undefined) ? item.volumeInfo.publishedDate.substring(0, 4) : ""
+                        var cartRow = document.createElement('div')
+                        var countCharTitle = (item.volumeInfo.title.length > 50) ? ' . . .' : ''
+                        var booksContents = `
+                        <div class="section-items">
+                            <img class="item-book" src="` + thumbnail + `">
+                            <div class="item-details">
+                                <h2 class="section-items item-name">` + item.volumeInfo.title.substring(0, 50) + countCharTitle + `</h2>
+                                <div class="section-items item-author">` + author.substring(0, 30) + countCharAuthor + `</div>
+                                <div class="section-items item-year">` + bookYear + `</div>
+                                <a class="click-item-details" href="detail.html?link=` + item.selfLink + `">Details!</a>
+                            </div>
+                        </div>`
+                        cartRow.innerHTML = booksContents
+                        testAPI.append(cartRow)
+                    })
+                })
+                .catch(err => {
+                    console.error(err);
+                })
+            }
+        }
+    </script>
+</body>
+</html>
